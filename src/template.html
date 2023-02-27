@@ -1,0 +1,42 @@
+<!-- src/template.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<p class="wrapper__text">Search Character</p>
+		<div class="input__wrapper">
+			<input type="search" class="input-search" name="search" placeholder="Search">
+			<div class="input__items">
+				<button id="search__btn">Search</button>
+				<div class="input-radio__btn">
+					<div class="inputs">
+						<input type="radio" class="status" id="status1" name="status" value="Alive">
+						<label for="status1">Alive</label>
+					</div>
+					<div class="inputs">
+						<input type="radio" class="status" id="status2" name="status" value="Dead">
+						<label for="status2">Dead</label>
+					</div>
+					<div class="inputs">
+						<input type="radio" class="status" id="status3" name="status" value="unknown">
+						<label for="status3">unknown</label>
+					</div>
+				</div>
+			</div>
+			<div class="result-search">
+			</div>
+		</div>
+		<div class="modal">
+		</div>
+	</div>
+
+</body>
+
+</html>
